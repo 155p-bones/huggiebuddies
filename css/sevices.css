@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container {
+    background-image: url(../media/services/lonely.avif);
+    background-position: right;
+    background-size: cover;
+    overflow-x: hidden;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.137);
+    height: 400px;
+    margin-bottom: 5%;
+}
+.header-content {
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+}
+.header-content h2 {
+    font-size: 2.5rem;
+}
+.header-content p {
+    font-weight: bold;
+    margin: auto;
+    max-width: 400px;
+}
+.header p {
+    font-size: 1.5rem;
+}
+.container-2 {
+    overflow-x: hidden;
+}
+.container-2 .title {
+    font-family: "poppins";
+    color: black;
+    background-color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 5%;
+}
+#rows {
+    margin-top: 5%;
+}
+#rows h2 {
+    font-family: "poppins";
+}
+.text h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+.text p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+.row1 img {
+    height: auto;
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 40%;
+}
+.row1 .text {
+    margin-right: 5%;
+    float: right;
+    width: 45%;
+}
+.row2 img {
+    height: auto;
+    margin-left: 5%;
+    width: 40%;
+}
+.row2 .text {
+    margin-left: 5%;
+    float: left;
+    width: 45%;
+}
+.container-2 img {
+    border-radius: 5px;
+    transform: scale(1);
+    transition: 0.5s;
+    height: 450px;
+}
+.container-2 img:hover {
+    transform:scale(1.1);
+    transition: 0.5s;
+}
+
+@media (max-width: 1116px) {
+    .title h2 {
+        font-size: 2rem;
+    }
+     .text h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 0%;
+    }
+    .text p {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .container-2 img:hover {
+        transform: none;
+    }
+    .text h2 {
+        text-align: left;
+    }
+    .row1 .text {
+        margin: auto;
+        width: 90%;
+        float: none;
+    }
+    .row1 img {
+        margin: 0;
+        width: 100%;
+        height: auto;
+        border-radius: 0%;
+    }
+    .row2 .text {
+        margin: auto;
+        width: 90%;
+        float: none;
+    }
+    .row2 img {
+        margin: 0;
+        width: 100%;
+        height: auto;
+        border-radius: 0%;
+    }
+    img:hover {
+        transform: none;
+        transition: none;
+    }
+}
+@media (max-width: 425px) {
+    .header-content p {
+        font-size: 1.2rem;
+    }
+}

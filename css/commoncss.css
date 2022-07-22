@@ -1,0 +1,196 @@
+@font-face {
+    font-family: "bridge";
+    src: url(../media/mainpage/BridgeridenRegular-rg8Kx.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: "poppins";
+    src: url(../media/mainpage/Poppins-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "alegra";
+    src: url(../media/mainpage/AlegreyaSansSC-Medium.ttf) format("truetype");
+}
+@font-face {
+    font-family: "bebas";
+    src: url(../media/book/BebasNeue-Regular.ttf) format("truetype");
+}
+.line {
+    width: 150px;
+    height: 5px;
+    background: red;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+#navbarlinks {
+    z-index: 10;
+    position: fixed;
+    background-color: rgb(61, 59, 59);
+    width: 60%;
+    height: 100%;
+    transform: translateX(300%);
+}
+#menu-items-container {
+    margin-top: 45%;
+    display: flex;
+    flex-direction: column;
+}
+.menu-item a {
+    font-size: 1.5rem;
+    margin-top: 20%;
+    margin-right: 10%;
+    display: flex;
+    color: white;
+    justify-content: center;
+    text-decoration: none;
+    font-family: "alegra";
+}
+.menu-item a:hover {
+    color: black;
+}
+.line-2 {
+    width: 30%;
+    height: 5px;
+    background: white;
+    margin-left: 30%;
+    border-radius: 5px;
+}
+.menu {
+    top: 0.5rem;
+    right: 1rem;
+    position: fixed;
+    justify-content: right;
+    z-index: 20;
+}
+.menu-bar {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+.navbarlinks {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+.navbar img {
+    max-width: 90px;
+    min-width: 50px;
+    display: block;
+    margin-top: 1%;
+    margin-left: 1%;
+    width: 5%;
+    height: auto;
+}
+li {
+    margin-top: 1%;
+    margin-left: 2%;
+    list-style: none;
+    text-align: right;
+}
+li a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    margin: 10px;
+}
+li a:hover {
+    color: red;
+}
+.bottom {
+  background-color: darkgray;
+}
+.bottom-content {
+  font-family: "poppins";
+  padding: 3%;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.special {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.col1 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.col2 {
+    width: 20%;
+}
+.calling {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.logo {
+    height: auto;
+    margin-top: 5%;
+    width: 30%;
+}
+.logo img{
+    width: 12%;
+    min-width: 20px;
+}
+.copyright {
+    color: black;
+    font-size: 0.8rem;
+}
+@keyframes flash {
+    0% {opacity: 1;}
+    50% {opacity: 0.1;}
+    100% {opacity: 1;}
+}
+@media (min-width: 850px) {
+    .menu {
+        display: none;
+    }
+    #navbarlinks {
+        display: none;
+    }
+}
+@media (max-width: 850px) {
+    .navbarlinks {
+        display: none;
+    }
+}
+@media (max-width: 500px) {
+    .navbar img {
+        width: 10%;
+    }
+    .special {
+        font-size: 1rem;
+    }
+    .calling {
+        font-size: 1rem;
+    }
+    .col1 {
+        width: 50%;
+    }
+    .col2 p {
+        margin: 0%;
+        font-size: 0.7rem;
+    }
+    .bottom-content {
+        display: flex;
+        justify-content: space-around;
+    }
+    .col2 {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+    }
+}

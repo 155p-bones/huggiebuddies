@@ -1,0 +1,361 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    border: 0;
+    overflow-x: hidden;
+}
+/* container-1 style */
+.container {
+    background-image: url(../media/book/book.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+}
+.header-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 5%;
+    color: white;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.137);
+}
+/* container-2 style*/
+.container-2 {
+    text-align: center;
+}
+.container-2 h1 {
+    font-family: "poppins";
+}
+.header-content h2 {
+    font-size: 3rem;
+}
+.top {
+    text-align: center;
+    font-family: "poppins";
+}
+.container2 {
+    width: 65%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+}
+.header-row {
+    font-size: 1.5rem;
+    font-family: "bebas";
+    border-bottom: none !important;
+    border: black solid 1px;
+    background-color: gray;
+    width: 100%;
+    display: flex;
+}
+.header-item {
+    padding: 1%;
+    border-bottom: black solid 1px;
+    border-right: black solid 2px;
+    width: 33%;
+    text-align: center;
+}
+.header-item:hover {
+    background-color: lightgray;
+}
+.clicked {
+    background-color: black;
+    color: white;
+}
+.clicked:hover {
+    background-color: black;
+}
+.item-row {
+    display: flex;
+    justify-content: space-between;
+    border: black solid 1px;
+    background-color: lightgray;
+    width: 100%;
+    display: flex;
+}
+.row-item-left {
+    width: 70%;
+    margin-left: 5%;
+}
+.left-top {
+    margin-top: 2%;
+    display: flex;
+}
+.left-top img{
+    border-radius: 20%;
+    margin-right: 2%;
+    max-height: 50px;
+    height: auto;
+    min-width: 40px;
+    width: 7%;
+}
+.left-top h2 {
+    font-family: "poppins";
+    margin-top: 0%;
+}
+.row-item-right {
+    font-weight: 500;
+    font-family: 'poppins';
+    margin-top: 5%;
+    width: 30%;
+}
+.sizing{
+    display: block;
+}
+.diet {
+    display: none;
+}
+.toys {
+    display: none;
+}
+.book {
+    margin-top: 3%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5%;
+    max-width: 1000px;
+    width: 90%;
+    background-color: lightgray;
+    display: flex;
+}
+.left-side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.right-side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.left-side .instructions {
+    margin-left: 5%;
+}
+.instructions {
+    font-family: "poppins";
+    width: 100%;
+    color: black;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-top: 5%;
+}
+.calculate {
+    text-align: left;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+/* card style */
+.cards {
+    margin-top: 5%;
+    width: 70%;
+    min-width: 150px;
+    max-width: 300px;
+    cursor: pointer;
+}
+/* Visa style */
+.visa {
+    border-radius: 5%;
+    background-image: linear-gradient(45deg, #0045c7, #ff2c7d);
+    display: flex;
+    flex-direction: column;
+    height: 160px;
+}
+.visa-front {
+    display: block;
+}
+.visa-front .row-1 {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+.row-1 img {
+    margin-top: 3%;
+}
+.visa-front .row-2 {
+    margin-left: 3%;
+    text-align: left;
+}
+.visa-front .row-3 {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.visa-front .row-3 {
+    font-size: 0.5rem;
+    color: white;
+}
+.visa-front .row-4 {
+    margin: auto;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+}
+.visa-front .r-side {
+    display: flex;
+}
+.visa-back {
+    height: 160px;
+    display: none;
+}
+.visa-back .row-1 {
+    border-top-left-radius: 15%;
+    border-top-right-radius: 13%;
+    background-color: black;
+    width: 100%;
+    height: 25px;
+}
+.visa-back .row-3 {
+    margin: auto;
+    width: 95%;
+    display: flex;
+    justify-content: right;
+    color: white;
+    font-size: 0.7rem;
+}
+.visa-back p {
+    margin: 0%;
+}
+.visa_display_cvv {
+    margin: 0%;
+}
+/* Mastercard display*/
+.mastercard {
+    border-radius: 5%;
+    background-image: linear-gradient(45deg, #424040, #836971);
+    display: none;
+    flex-direction: column;
+    height: 160px;
+}
+.mastercard-front {
+    display: block;
+}
+.mastercard-front .row-1 {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+.row-1 img {
+    margin-top: 3%;
+}
+.mastercard-front .row-2 {
+    margin-left: 3%;
+    text-align: left;
+}
+.mastercard-front .row-3 {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.mastercard-front .row-3 {
+    font-size: 0.5rem;
+    color: white;
+}
+.mastercard-front .row-4 {
+    margin: auto;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+}
+.mastercard-front .r-side {
+    display: flex;
+}
+.mastercard-back {
+    height: 160px;
+    display: none;
+}
+.mastercard-back .row-1 {
+    border-top-left-radius: 15%;
+    border-top-right-radius: 13%;
+    background-color: black;
+    width: 100%;
+    height: 25px;
+}
+.mastercard-back .row-3 {
+    margin: auto;
+    width: 95%;
+    display: flex;
+    justify-content: right;
+    color: white;
+    font-size: 0.7rem;
+}
+.mastercard-back p {
+    margin: 0%;
+}
+.mastercard_display_cvv {
+    margin: 0%;
+}
+.book input , select {
+    padding: 1%;
+    outline: none;
+    border: none;
+}
+.book input:hover , select:hover{
+    background-color: beige;
+}
+.card-toggle {
+    margin-top: 3%;
+}
+.card-details {
+    margin-top: 3%;
+}
+#cvv {
+    min-width: 23px;
+}
+#submit {
+    border-radius: 10%;
+    color: white;
+    padding: 1% 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: black;
+}
+@media (max-width: 700px) {
+    .container2 {
+        width: 85%;
+    }
+    .book input, select {
+        outline: none;
+        padding: 3%;
+        border: none;
+    }
+    #submit {
+        padding: 2% 5%;
+    }
+    .book {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-side {
+        text-align: center;
+        width: 50%;
+    }
+    .right-side {
+        text-align: center;
+        width: 100%;
+    }
+    .cards{
+        min-width: none;
+        max-width: 300px;
+        width: 95%;
+        margin: auto;
+    }
+    .payment-form .card-toggle {
+        text-align: center;
+    }
+    .payment-form {
+        margin: auto;
+        text-align: left;
+        width: 80%;
+    }
+}

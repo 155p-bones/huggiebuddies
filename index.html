@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\mainpage.css">
+    <link rel="stylesheet" href="css/commoncss.css">
+    <link rel="icon" href="media/mainpage/logo.png" type="image/icon type">
+    <title>HuggieBuddies</title>
+    
+</head>
+<body>
+    <div class="container1">
+      <div class="menu" onclick="display_menu()">
+        <div class="menu-bar"></div>
+        <div class="menu-bar"></div>
+        <div class="menu-bar"></div>
+    </div>
+        <div id="navbarlinks">
+            <div id="menu-items-container">
+                <div class="menu-item"><a href="index.html">Home</a></div>
+                <div class="line-2"></div>
+                <div class="menu-item"><a href="html/services.html">Services</a></div>
+                <div class="line-2"></div>
+                <div class="menu-item"><a href="html/contact.html">Contact</a></div>
+                <div class="line-2"></div>
+                <div class="menu-item"><a href="html/book.html">Book</a></div>
+                <div class="line-2"></div>
+            </div>
+        </div>
+        <div class="navbar">
+            <img src="media/mainpage/logo.png" alt="">
+            <ul class="navbarlinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html/services.html">Services</a></li>
+                <li><a href="html/contact.html">Contact</a></li>
+                <li ><a href="html/book.html">Book</a></li>
+            </ul>
+        </div>
+
+        <div class="header-content">
+
+            <h2>Board your pets</h2>
+            <div class="line"></div>
+            <h1>HuggieBuddies</h1><br>
+            <a href="html/book.html" class="book">Book now</a>
+
+        </div>
+    </div>
+    <div class="content">
+        <h2>About us</h2>
+        <div class="line"></div>
+        <div class="content1">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/N0b1jG-vrYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>We aspire to be Singapore's number one choice for Pet boarding and Daycare facility and offer safe and worry-free environment for parents to board their furkids. Most importantly, we strive to offer premium and quality pet care services at an affordable price</p>
+    </div>
+    </div>
+    <h2 id="more">More</h2>
+    <div class="line"></div>
+    <div class="container2">
+      <div class="display-more">
+        <p>We, at HuggieBuddies have boarded more than 100 different types of furkids and we love all of them ! Here are some of our cutest and favourite furkids! Feel free to interact with the carousel and introduce yourselves to them 😊  </p>
+      </div>
+      <div class="display-carousel">
+        <div class="arrow-left" onclick="toggle(-1)">
+          <img src="media/mainpage/arrow-left.png" alt="">
+        </div>
+        <div class="display-all-content">
+          <div class="display-content" >
+            <img src="media/mainpage/milo.jpg" alt="">
+            <div class="display-bottom">
+              Milo
+            </div>
+          </div>
+          <div class="display-content " style="display: block">
+            <img src="media/mainpage/pooffy.jpg" alt="">
+            <div class="display-bottom">
+              Pooffy
+            </div>
+          </div>
+          <div class="display-content">
+            <img src="media/mainpage/jammy.jpg" alt="">
+            <div class="display-bottom">
+              Jammy
+            </div>
+          </div>
+        <div class="nav-buttons">
+          <button class="button" onclick="show(0)"></button>
+          <button class="button" onclick="show(1)" style="background-color: gray;""></button>
+          <button class="button" onclick="show(2)"></button>
+        </div>
+        </div>
+        <div class="arrow-right" onclick="toggle(1)">
+          <img src="media/mainpage/arrow-right.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+        <div class="bottom-content">
+          <div class="col1">
+            <div class="special">
+              HuggieBuddies
+            </div>
+            <div class="copyright">
+              © HuggieBuddies B.V. 1999-2022
+            </div>
+            <div class="logo">
+              <a href="https://www.facebook.com/"><img src="media/mainpage/facebook.png" alt=""></a>
+              <a href="https://instagram.com/huggiebuddies?igshid=YmMyMTA2M2Y="><img src="media/mainpage/instagram.png" alt=""></a>
+            </div>
+          </div>
+          <div class="col2">
+            <div class="calling">
+              Operating hours
+            </div>
+            <p>Weekdays: 9AM - 10PM </p>
+            <p>Weekends: 10AM - 6PM</p>
+        </div>
+      </div>
+    </div>
+    </header>
+    <script src="javascript/commonjs.js"></script>
+    <script src="javascript/mainpaige.js"></script>
+    
+</body>
+</html>
+
+
